@@ -1,0 +1,14 @@
+<mat-card  
+  (click) = "showStutusKards();" 
+  [ngClass]="{'first': selected() === sprint().id, 'secend': !sprint().active}"
+> 
+@if (sprint().active) {
+  <mat-icon (click) ="deleteSprint(); $event.stopPropagation()">delete</mat-icon>
+  <mat-icon (click) ="editeSprnt(); $event.stopPropagation()">edite</mat-icon>
+} @else {
+  <mat-icon (click) ="returnSprint(); $event.stopPropagation()">fast_rewind</mat-icon>
+}
+  <mat-card-header>
+    <mat-card-title> {{sprint().title}}</mat-card-title>
+  </mat-card-header>
+</mat-card>

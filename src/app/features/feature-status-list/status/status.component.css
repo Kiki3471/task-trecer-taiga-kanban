@@ -1,0 +1,29 @@
+mat-card{
+    height: 600px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+hr{
+    border-width: 2px;
+    border-color: black;
+    width: 99%;
+}
+
+mat-icon{
+    margin-left: 250px;
+    margin-top: -25px;
+    color: rgb(115 81 139);
+    transition: 0.3s linear;
+}
+
+mat-icon:hover{
+    cursor: pointer;
+    color: red;
+    transform: matrix(2);
+
+}
+
+.editeIcon{
+    margin-left: 220px;
+}

@@ -1,0 +1,13 @@
+<p class="title">{{data.task.title}}</p>
+<p class="text">{{data.task.text}}</p>
+@if (data.task.imgUrl) {
+    <img [src]="data.task.imgUrl" alt="">
+} 
+@for (sprint of data.sprints; track $index) {
+@if(data.task.sprintId == sprint.id && sprint.active && !data.task.imgUrl) {
+    <p class="noImg">Изображение не добавленно</p>
+}
+@if(data.task.sprintId == sprint.id && !sprint.active && !data.task.imgUrl){
+    <p class="noImg">Изображение не было добавленно</p>
+}
+}

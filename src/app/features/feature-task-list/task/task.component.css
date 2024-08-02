@@ -1,0 +1,24 @@
+mat-card{
+    margin: 0 10px 10px;
+    height: 100px;
+    user-select: none;
+    background-color: rgb(96, 157, 159);
+    border: solid black 2px;
+}
+
+mat-card:hover{
+    cursor: grab;
+    background-color:  rgb(75, 138, 142);
+}
+
+mat-icon{
+    transition: 0.3s linear;
+    position: relative;
+    z-index: 100;
+    margin: -80px 240px
+}
+
+mat-icon:hover{
+    cursor: pointer;
+    color: red;
+}

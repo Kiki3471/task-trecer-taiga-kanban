@@ -1,0 +1,6 @@
+<app-status-list 
+    [statusTasks]="(statusTasks$ | async)!"
+    [sprints] = "sprints()!"
+    (newTaskEmitter)="addTask($event)"
+    (editedStatusEmitter)="editeStatus($event)"
+></app-status-list>

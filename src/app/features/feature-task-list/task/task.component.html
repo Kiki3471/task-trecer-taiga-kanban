@@ -1,0 +1,10 @@
+<mat-card appearance="outlined" (click)="openContainer()">
+    <mat-card-content>title: {{task().title}}</mat-card-content>
+    <mat-card-content>sprintId: {{task().sprintId}}</mat-card-content> 
+    <mat-card-content>statusTask: {{task().statusTask}}</mat-card-content> 
+    @for (sprint of sprints(); track $index) {
+        @if (sprint.id == task().sprintId && sprint.active) {
+            <mat-icon (click) ="editeTask(); $event.stopPropagation()">edite</mat-icon>
+        }
+    }
+</mat-card>

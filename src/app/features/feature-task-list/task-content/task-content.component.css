@@ -1,0 +1,33 @@
+.title{
+    margin: 30px auto;
+}
+
+.text{
+    margin: 0 auto 10px;
+}
+
+img{
+    margin: auto;
+    margin-bottom: 50px;
+    max-width: 200px;
+    max-height: 300px;
+}
+
+mat-form-field{
+    padding: 15px;
+    margin-top: -30px;
+}
+
+div{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    width: 10px;
+    margin-bottom: 15px;
+}
+
+.noImg{
+    margin: 30px
+}

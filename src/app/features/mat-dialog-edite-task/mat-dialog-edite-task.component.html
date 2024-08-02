@@ -1,0 +1,36 @@
+<p>{{data.text}}</p>
+<form [formGroup] = "formGroup">
+    <mat-form-field>
+        <mat-label>{{data.matLabel}}</mat-label>
+        <input 
+            matInput
+            formControlName = "inputTitle"
+        >
+    </mat-form-field>
+    <mat-form-field #imgConrol>
+        <mat-label>{{data.matText}}</mat-label>
+        <input 
+            matInput
+            formControlName = "inputText"
+        >
+    </mat-form-field>
+    <mat-form-field>
+    <mat-label>Ссылка на изображение</mat-label>
+    <input 
+        matInput 
+        formControlName = "inputImg"
+    >
+    </mat-form-field>
+    <input class="imgInput" type="file" accept="image/png, image/jpeg">
+</form>
+<div>
+    <button
+        mat-raised-button
+        (click)="closeDialog()"
+    >Отмена</button>
+    <button
+        mat-raised-button
+        (click)="editeSprint()"
+        [disabled]="formGroup.invalid"
+    >Ок</button>
+</div>

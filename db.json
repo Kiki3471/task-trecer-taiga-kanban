@@ -1,0 +1,129 @@
+{
+    "sprint": [
+        {
+            "id": 1,
+            "title": "way",
+            "active": true
+        },
+        {
+            "id": 2,
+            "title": "to all",
+            "active": true
+        },
+        {
+            "id": 3,
+            "title": "home",
+            "active": true
+        }],
+    "task": [
+        {
+            "id": 1,
+            "title": "make fACJ",
+            "sprintId": 1,
+            "statusTask": "neeeeeeew",
+            "imgUrl": "https://img.razrisyika.ru/kart/90/356661-krome-hellou-kitti-33.jpg",
+            "text": "gav"
+        },
+        {
+            "id": 2,
+            "title": "make fun",
+            "sprintId": 1,
+            "statusTask": "neeeeeeew",
+            "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgTWc48HC26fAj8IZrYib9wMP_DZLsb96PUg&s",
+            "text": "gav"
+        },
+        {
+            "id": 3,
+            "title": "sleep",
+            "sprintId": 1,
+            "statusTask": "ready",
+            "imgUrl": "",
+            "text": "gav"
+        },
+        {
+            "id": 4,
+            "title": "sleep",
+            "sprintId": 1,
+            "statusTask": "in progress",
+            "imgUrl": "",
+            "text": "gav"
+        },
+        {
+            "id": 5,
+            "title": "sleep",
+            "sprintId": 1,
+            "statusTask": "done",
+            "imgUrl": "",
+            "text": "gav"
+        },
+        {
+            "id": 6,
+            "title": "go to the store",
+            "sprintId": 2,
+            "statusTask": "ready",
+            "imgUrl": "",
+            "text": "gav"
+        }],
+        "status": [
+            {
+                "id": 1,
+                "title": "neeeeeeew",
+                "sprintId": 1
+            },
+            {
+                "id": 2,
+                "title": "ready",
+                "sprintId": 1
+            },
+            {
+                "id": 3,
+                "title": "in progress",
+                "sprintId": 1
+            },
+            {
+                "id": 4,
+                "title": "done",
+                "sprintId": 1
+            },
+            {
+                "id": 5,
+                "title": "new",
+                "sprintId": 2
+            },
+            {
+                "id": 6,
+                "title": "ready",
+                "sprintId": 2
+            },
+            {
+                "id": 7,
+                "title": "in progress",
+                "sprintId": 2
+            },
+            {
+                "id": 8,
+                "title": "done",
+                "sprintId": 2
+            },
+            {
+                "id": 9,
+                "title": "new",
+                "sprintId": 3
+            },
+            {
+                "id": 10,
+                "title": "ready",
+                "sprintId": 3
+            },
+            {
+                "id": 11,
+                "title": "in progress",
+                "sprintId": 3
+            },
+            {
+                "id": 12,
+                "title": "done",
+                "sprintId": 3
+            }
+        ]
+  }

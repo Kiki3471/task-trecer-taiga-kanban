@@ -1,0 +1,27 @@
+p{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+mat-form-field{
+    padding: 0 15px;
+    width: 400px;
+}
+
+button{
+    width: 10px;
+    margin-bottom: 15px;
+}
+
+div{
+    display: flex;
+    justify-content: space-around;
+}
+
+form{
+    width: 450px;
+}
+
+.imgInput{
+    margin-left: 18px;
+}

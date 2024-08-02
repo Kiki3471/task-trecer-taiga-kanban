@@ -1,0 +1,10 @@
+.main{
+    background-color: rgb(89 203 111);
+    height: 7%;
+    position: fixed;
+    width: 100%;
+}
+
+p{
+    padding-left: 50%;
+}

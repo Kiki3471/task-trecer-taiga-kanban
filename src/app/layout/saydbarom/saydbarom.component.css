@@ -1,0 +1,21 @@
+.main{
+    z-index: 10;
+    margin-top: 50px;
+    width: 200px;
+    height: 93%;
+    position: fixed;
+    background-color: rgb(80, 80, 175);
+}
+
+mat-icon{
+    margin-left: 155px;
+    color: rgb(255 252 0);
+    transition: 0.3s linear;
+}
+
+mat-icon:hover{
+    cursor: pointer;
+    color: red;
+    transform: matrix(2);
+
+}

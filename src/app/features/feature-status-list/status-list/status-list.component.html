@@ -1,0 +1,8 @@
+@for (statusTask of statusTasks(); track $index) {
+    <app-status 
+        [statusTask] = "statusTask"
+        [sprints] = "sprints()"
+        (newTaskEmitter)="addTask($event)"
+        (editedStatusEmitter)="editeStatus($event)"
+    ></app-status>
+}

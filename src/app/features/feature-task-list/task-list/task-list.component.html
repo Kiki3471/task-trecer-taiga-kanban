@@ -1,0 +1,29 @@
+  <div
+    cdkDropList
+    [cdkDropListData]="(tasks | tasksBySprint: statusTask(): sprintId() | async)!"
+    class="example-list"
+    (cdkDropListDropped)="drop($event)"
+    [cdkDropListConnectedTo]="['cdk-drop-list-0', 'cdk-drop-list-1', 'cdk-drop-list-2','cdk-drop-list-3']"
+  >
+    @for (task of tasks | tasksBySprint: statusTask(): sprintId() | async; track task) {
+       @for (sprint of sprints(); track $index) {
+        @if (sprint.id == sprintId() && !sprint.active) {
+          <app-task 
+            [sprints] = "sprints()"
+            [task] = "task"
+          ></app-task>
+        }
+        @if (sprint.id == sprintId() && sprint.active) {
+          <app-task 
+            [sprints] = "sprints()"
+            [task] = "task" 
+            cdkDrag 
+            [cdkDragData] = "task"
+            (addImg)="addImgF($event)"
+            (newTaskTitleEmutter) = "editeTask($event)"
+            (newTaskTextEmutter) = "edeteText($event)"
+          ></app-task>
+        }
+       }
+    }
+  </div>

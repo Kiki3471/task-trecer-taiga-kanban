@@ -1,0 +1,11 @@
+@for (sprint of sprints$  | async; track sprint.id){
+    <app-sprint 
+        [sprint] = "sprint" 
+        [(selected)] = "sprintSignal" 
+        (openSprint) = "openSprintF($event)"
+        (editSprint) = "editSprintF($event)"
+        (deleteSprintEmitter) = "deletSprint($event)"
+        (returnSprintEmitter) = "returnSprint($event)"
+    ></app-sprint>
+}
+

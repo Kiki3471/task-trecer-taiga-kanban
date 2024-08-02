@@ -1,0 +1,10 @@
+<app-task-list 
+    [tasks] = "tasks$" 
+    [sprints] = "sprints()!"
+    [statusTask] = "statusTask" 
+    [sprintId] = "sprintId"
+    (addImg)="addImg($event)"
+    (changeStatusEmitter)="changeStatus($event)"
+    (newTaskTitleEmutter) = "editeTask($event)"
+    (changeTextEmitter) = "editeText($event)"
+></app-task-list>

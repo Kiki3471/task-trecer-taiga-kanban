@@ -1,0 +1,11 @@
+<mat-card appearance="outlined">
+    <mat-card-content>{{statusTask().title}}</mat-card-content>
+    @for (sprint of sprints(); track $index) {
+        @if (statusTask().sprintId == sprint.id && sprint.active) {
+            <mat-icon class="editeIcon" (click) = "editeStatus()">edite</mat-icon>
+            <mat-icon (click) = "addTask()">add</mat-icon>
+        }
+    }
+    <hr>
+    <app-task-list-container [statusTask]="statusTask().title" [sprintId] = "statusTask().sprintId"></app-task-list-container>
+</mat-card>

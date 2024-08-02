@@ -1,0 +1,38 @@
+mat-card{
+    padding: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    transition: 0.1s linear;
+}
+
+.first{
+    background-color: rgb(96 243 135 / 98%);
+}
+
+.secend{
+    background-color: #ff5c5c;
+}
+
+
+mat-card:hover{
+    background-color: rgb(160, 206, 247);
+    cursor: pointer;
+}
+
+mat-icon{
+    position: relative;
+    top: 10px;
+    transition: 0.3s linear;
+}
+
+mat-icon:hover{
+    cursor: pointer;
+    color: red;
+}
+
+mat-card-title{
+    position: relative;
+    left: -40px;
+    top: -7px
+}

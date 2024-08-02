@@ -1,0 +1,7 @@
+<app-sprint-list 
+    [sprints$] = "sprints$" 
+    (openSprint) = "openSprint($event)"
+    (editSprint) = "editSprint($event)"
+    (deletSprintEmitter) = deletSprint($event)
+    (returnSprintEmitter) = returnSprint($event)
+></app-sprint-list>

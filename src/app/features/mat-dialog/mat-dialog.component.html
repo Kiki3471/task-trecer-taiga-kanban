@@ -1,0 +1,19 @@
+<p>{{data.text}}</p>
+    <mat-form-field>
+        <mat-label>{{data.matLabel}}</mat-label>
+        <input 
+            matInput
+            [formControl] = "inputName"
+        >
+    </mat-form-field>
+<div>
+    <button
+        mat-raised-button
+        (click)="closeDialog()"
+    >Отмена</button>
+    <button
+        mat-raised-button
+        (click)="editeSprint()"
+        [disabled]="!inputName.valid"
+    >Ок</button>
+</div>
